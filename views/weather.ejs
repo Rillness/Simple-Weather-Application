@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+
+  <div class="ui container">
+    <h1><%= cityName%>, <%= country%> </h1>
+    <h3><%= temperature %> Degrees Farenheight</h3>
+    <h3>Forecast : <%= forecast %></h3>
+    <h4>Description : <%= description %></h4>
+  <a href="/">Go Back</a>
+  <br><br>
+  <a href="/saveWeather/<%= id %>" class="ui button">Save</a>
+  </div>
+
+<% include ../partials/footer %>

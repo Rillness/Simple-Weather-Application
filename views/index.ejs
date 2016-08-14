@@ -1,0 +1,17 @@
+<% include ../partials/header.ejs %>
+<br>
+<div class="ui container">
+  <h1>Search for the Weather</h1>
+  <h3>Enter The Any City, or Zip Code</h3>
+  <form action="/weathersearch" method="GET">
+    <div class="ui input">
+      <input type="text" name="cityQuery">
+    </div>
+    <br> <br>
+    <button class="ui button">Submit</button>
+  </form>
+
+
+</div>
+
+<% include ../partials/footer.ejs %>

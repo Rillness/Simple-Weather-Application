@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+<h1>You did not enter a zip code. Here we'll try to get the weather for you, but it can't be saved.</h1>
+  <div class="ui container">
+    <h1><%= cityName%>, <%= country%> </h1>
+    <h3><%= temperature %> Degrees Farenheight</h3>
+    <h3>Forecast : <%= forecast %></h3>
+    <h4>Description : <%= description %></h4>
+  <a href="/">Go Back</a>
+  <br><br>
+  <a href="/saveWeather/<%= id %>" class="ui button">Save</a>
+  </div>
+
+<% include ../partials/footer %>

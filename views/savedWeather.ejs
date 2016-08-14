@@ -1,0 +1,25 @@
+<% include ../partials/header.ejs %>
+<div class="ui container">
+  <h1>Saved Weather</h1>
+  <a href="/remove" class="ui button red">CLEAR</a>
+
+  <div>
+    <br>
+    <%location.forEach(function(found){%>
+  <h3  > Saved Weather for Search : <%= found.locations %></h3>
+
+    <%})%>
+    <h2><%= cityName  %></h2>
+    <p>Country -- <%= country %></p>
+    <h2><%= temperature %> degrees Farenheight</h2>
+    <h4>The forecast is saying : <%= forecast %></h4>
+    <h4>A better description is : <%= description %></h4>
+
+
+
+  </div>
+
+
+</div>
+
+<% include ../partials/footer.ejs %>
